@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "ethmumbai-blob-storage-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Arbitrum / Ethereum L2",
+        "PROJECT_TICKER": "EMBLOB"
+      },
+      "tools": [
+        {
+          "name": "verify_emblob_invariants",
+          "description": "Verifies deterministic invariants for ETHMumbai Blob Storage AI on Arbitrum / Ethereum L2."
+        },
+        {
+          "name": "execute_emblob_action",
+          "description": "Executes authenticated L2 Scaling state transition."
+        }
+      ]
+    }
+  }
+}
